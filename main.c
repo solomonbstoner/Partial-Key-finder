@@ -10,7 +10,14 @@ uint32_t solvePartialKey(uint32_t);
 int main(int argc, char *argv[]){ //shift to main.c
 
         if (!(strcmp("--help", argv[1]))) {
-          printf("Help Documentation\n");
+          printf("Partial-Key-finder.\n\
+          Usage:\n\
+          \t./partialKey <16-bit hex seed pool>\n\n\
+          Example:\n\
+          \t./partialKey 0xFEDA\n\n\
+          Description:\n\
+          \tThis program outputs a 16-bit partial key decrypted from the 16-bit seedpool given as input. \
+          Both output and input are base-16.\n");
           return 0;
         }
 
